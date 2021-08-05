@@ -11,7 +11,13 @@ var firebaseConfig = {
 };
 
 // Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+if(!firebase.apps.length) {
+   firebase.initializeApp(firebaseConfig);
+   firebase.firestore().settings({ experimentalForceLongPolling: true });
+   instance = this;
+ } else {
+   console.log("firebase apps already running...")
+ }
 
 const db = firebase.firestore();
 
