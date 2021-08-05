@@ -12,7 +12,7 @@ const StatLabel = styled.p`
    font-weight: 500;
    color: ${props => props.isCompleted ? '#FFF' : 'rgba(0, 0, 0, .5)'};
    text-align: ${props => props.isCompleted ? 'center' : 'left'};
-   @media screen and (max-width: 25rem) {
+   @media screen and (max-width: 48rem) {
       text-align: center;
    }
 `;

@@ -82,7 +82,7 @@ const StatsContainer = styled.section`
    grid-template-columns: repeat(3, 1fr);
    gap: 1.25rem;
    margin-bottom: 3.125rem;
-   @media screen and (max-width: 25rem) {
+   @media screen and (max-width: 48rem) {
       grid-template-columns: repeat(1, 1fr);
       place-items: center;
    }
@@ -96,7 +96,7 @@ const ReachContainer = styled.article`
 const StatArticle = styled.article`
    width: 80%;
    border-right: ${props => props.hasBorder ? '1px solid #ccc' : 'none'};
-   @media screen and (max-width: 25rem) {
+   @media screen and (max-width: 48rem) {
       text-align: center;
       border-right: none;
       border-bottom: ${props => props.hasBorder ? '1px solid #ccc' : 'none'};
